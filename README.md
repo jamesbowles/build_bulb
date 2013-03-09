@@ -19,5 +19,5 @@ Setup
 Build bulb
 ----------
 
-I used a teensy in Arduino mode http://www.pjrc.com/store/teensy.html with circuit very similar to the one in the tutorial 
-http://www.pjrc.com/teensy/tutorial2.html
+I used a teensy in Arduino mode http://www.pjrc.com/store/teensy.html 
+with a circuit very similar to the one in the tutorial http://www.pjrc.com/teensy/tutorial2.html
