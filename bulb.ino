@@ -1,3 +1,4 @@
+// for a tri-colour LED. A green and red LED can be used
 int red_pin =  13;
 int green_pin =  12;
 int blue_pin =  11;
@@ -42,8 +43,6 @@ void set_light(int colour_key)
     case 103:  //green
       fade_to(green);
       break;
-    default:
-      Serial.println('ah crap');
   }
 }
 
