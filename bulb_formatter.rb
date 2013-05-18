@@ -12,7 +12,7 @@ class BulbFormatter < RSpec::Core::Formatters::ProgressFormatter
     begin
       @bulb = SerialPort.new(DEVICE, 9600)
       
-      if @buld.nil?
+      if @bulb.nil?
         puts "\nWARNING: Couldn't find build bulb"
         return
       end
@@ -25,7 +25,7 @@ class BulbFormatter < RSpec::Core::Formatters::ProgressFormatter
   def dump_summary(duration, example_count, failure_count, pending_count)
     super
 
-    if @buld.nil?
+    if @bulb.nil?
       puts "\nWARNING: Couldn't find build bulb"
       return
     end
