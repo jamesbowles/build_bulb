@@ -31,11 +31,11 @@ class BulbFormatter < RSpec::Core::Formatters::ProgressFormatter
     end
 
     if failure_count.zero?
-      @bulb.try(:write, "g")
+      @bulb.write "g"
     else
-      @bulb.try(:write, "r")
+      @bulb.write "r"
     end
 
-    @bulb.try(:close)
+    @bulb.close
   end
 end
