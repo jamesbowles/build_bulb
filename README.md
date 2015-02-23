@@ -7,14 +7,14 @@ Requirements
 ------------
 
 1. Serial-USB build bulb
-2. serialport gem
-3. rvm
+1. serialport gem
+1. rvm
 
 Setup
 -----
-
+1. rvm gemset use global
 1. gem install serialport
-2. add the contents of the .rspec file to your global or project .rspec file (edit paths if needed)
+1. add the contents of the .rspec file to your global or project .rspec file (edit paths if needed)
 
 Build bulb
 ----------
