@@ -1,1 +1,1 @@
---color --require ~/src/build_bulb/bulb_formatter.rb --format BulbFormatter
+--color -f p --require ~/src/build_bulb/bulb_formatter_v3.rb --format BulbFormatterV3
