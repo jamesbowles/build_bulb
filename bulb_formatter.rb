@@ -1,7 +1,7 @@
 require 'rspec/core/formatters/progress_formatter'
 # dirty hack, see: https://github.com/carlhuda/bundler/issues/183
 $LOAD_PATH.concat Dir.glob("#{ENV['rvm_path']}/gems/#{ENV['RUBY_VERSION']}@global/gems/*/lib")
-require 'serialport'
+require 'rubyserial'
 
 class BulbFormatter < RSpec::Core::Formatters::ProgressFormatter
 
@@ -10,7 +10,7 @@ class BulbFormatter < RSpec::Core::Formatters::ProgressFormatter
   def initialize(output)
     super(output)
     begin
-      @bulb = SerialPort.new(DEVICE, 9600)
+      @bulb = Serial.new(DEVICE, 9600)
       
       if @bulb.nil?
         puts "\nWARNING: Couldn't find build bulb"
